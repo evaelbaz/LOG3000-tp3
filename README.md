@@ -4,6 +4,6 @@ Numéro d'équipe : 1
 
 Objectif : Calculer des chiffres
 
-Prérequis d'installation : 
+Prérequis d'installation : Python et pip installés
 
 Instructions d'installation :
