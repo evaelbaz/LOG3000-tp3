@@ -6,4 +6,4 @@ Objectif : Calculer des chiffres
 
 Prérequis d'installation : Python et pip installés
 
-Instructions d'installation :
+Instructions d'installation : Cloner le repository, rouler la commande pip install flask, et ensuite rouler la commande python app.py
