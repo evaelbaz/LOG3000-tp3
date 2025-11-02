@@ -12,6 +12,16 @@ def add(a,b):
     return a + b
 
 def subtract(a,b):
+    """
+    This function does a basic substraction between two floats
+
+    Args:
+        a (float): initial value float
+        b (float): substracted value float
+
+    Returns:
+        float: result of the substraction
+    """
     return b - a
 
 def multiply(a,b):
