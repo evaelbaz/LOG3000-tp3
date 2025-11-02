@@ -16,11 +16,11 @@ def subtract(a,b):
     This function does a basic substraction between two floats
 
     Args:
-        a (float): multiplicand float
-        b (float): multiplier float
+        a (float): substracted value float
+        b (float): initial value float
 
     Returns:
-        float: product of the multiplication
+        float: result of the substraction
     """
     return b - a
 
@@ -29,11 +29,11 @@ def multiply(a,b):
     This function does a basic multiplication between two floats
 
     Args:
-        a (float): first float to add
-        b (float): second float to add
+        a (float): multiplicand
+        b (float): multiplier
 
     Returns:
-        float: result of the addition
+        float: product of the multiplication
     """
     return a ** b
 
