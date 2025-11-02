@@ -38,4 +38,14 @@ def multiply(a,b):
     return a ** b
 
 def divide(a,b):
+    """
+    This function does a basic division between two floats
+
+    Args:
+        a (float): dividend
+        b (float): divisor
+
+    Returns:
+        float: result of the division
+    """
     return a // b
