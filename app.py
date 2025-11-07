@@ -24,6 +24,7 @@ def calculate(expr: str):
 
     Returns:
         float: Le résultat de l'opération mathématique."""
+    
     if not expr or not isinstance(expr, str):
         raise ValueError("empty expression")
 
@@ -32,6 +33,7 @@ def calculate(expr: str):
     op_pos = -1
     op_char = None
 
+    #Trouver la position de l'opérande
     for i, ch in enumerate(s):
         if ch in OPS:
             if op_pos != -1:
@@ -40,7 +42,7 @@ def calculate(expr: str):
             op_char = ch
 
     if op_pos <= 0 or op_pos >= len(s) - 1:
-        # operator at start/end or not found
+        # Aucun opérande trouvé
         raise ValueError("invalid expression format")
 
     left = s[:op_pos]
@@ -64,6 +66,7 @@ def index():
     """
     result = ""
     if request.method == 'POST':
+        #Extraire valeur afficher dans la calculatrice
         expression = request.form.get('display', '')
         try:
             result = calculate(expression)
