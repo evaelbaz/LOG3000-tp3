@@ -1,51 +1,55 @@
 def add(a,b):
     """
-    This function does a basic addition between two floats
+    Cette fonction prend deux valeurs, `a` et `b`, en paramètres et retourne leur somme.
 
     Args:
-        a (float): first float to add
-        b (float): second float to add
+        a (Any): La première valeur à additionner.
+        b (Any): La deuxième valeur à additionner.
 
     Returns:
-        float: result of the addition
+        Any: Le résultat de l'addition de `a` et `b`. Le type du résultat dépend des types des opérandes.
     """
     return a + b
 
 def subtract(a,b):
     """
-    This function does a basic substraction between two floats
+    Cette fonction prend deux valeurs, `a` et `b`, et retourne le résultat de la soustraction de `a` par `b`.
 
     Args:
-        a (float): substracted value float
-        b (float): initial value float
+        a (Any): La valeur à soustraire.
+        b (Any): La valeur dont on soustrait `a`.
 
     Returns:
-        float: result of the substraction
+        Any: Le résultat de la soustraction de `a` par `b` (c'est-à-dire `b - a`). 
     """
+
     return b - a
 
 def multiply(a,b):
     """
-    This function does a basic multiplication between two floats
+    Cette fonction prend deux valeurs, `a` et `b`, en paramètres et retourne leur produit.
 
     Args:
-        a (float): multiplicand
-        b (float): multiplier
+        a (Any): Le premier facteur.
+        b (Any): Le second facteur.
 
     Returns:
-        float: product of the multiplication
+        Any: Le produit de `a` et `b`. Le type du résultat dépend des types des opérandes.
     """
     return a ** b
 
 def divide(a,b):
     """
-    This function does a basic division between two floats
+    Cette fonction prend deux valeurs, `a` et `b`, en paramètres et retourne le résultat de la division de `a` par `b`.
 
     Args:
-        a (float): dividend
-        b (float): divisor
+        a (Any): La valeur à diviser.
+        b (Any): La valeur par laquelle diviser.
 
     Returns:
-        float: result of the division
+        Any: Le résultat de la division de `a` par `b`. Le type du résultat dépend des types des opérandes.
+
+    Raises:
+        ZeroDivisionError: Si `b` est égal à zéro, une exception de type `ZeroDivisionError` est levée.
     """
     return a // b
