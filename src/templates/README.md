@@ -1,7 +1,5 @@
 # Module templates/
 
-## Raison d'être
-
 Le module `templates/` contient le templates HTML utilisé pour générer la page web de l'application.
 
 ## Fichiers principaux et leurs responsabilités

@@ -1,7 +1,5 @@
 # Module src/
 
-## Raison d'être
-
 Le module `src/` contient toute la logique métier de l'application, incluant le serveur web Flask, les fonctions de calcul mathématique, et la gestion des requêtes HTTP.
 
 ## Fichiers principaux et leurs responsabilités

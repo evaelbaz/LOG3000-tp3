@@ -1,7 +1,5 @@
 # Module static/
 
-## Raison d'être
-
 Le module `static/` contient la feuille de style css utilisé pour l'application.
 
 ## Fichiers principaux et leurs responsabilités

@@ -1,7 +1,5 @@
 # Calculatrice simple
 
-## Informations du projet
-
 - **Numéro d'équipe** : 1
 - **Objectif** : Fournir une calculatrice sous forme d'interface visuel, permettant d'insérer des chiffres et des opérandes et d'ensuite en calculer le résultat, tout comme une calculatrice traditionnelle.
 
