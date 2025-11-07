@@ -4,11 +4,14 @@ from operators import add, subtract, multiply, divide
 app = Flask(__name__)
 
 OPS = {
+
     '+': add,
     '-': subtract,
     '*': multiply,
     '/': divide,
 }
+"""Dictionnaire qui associe le symboles d'un opérande à sa fonction mathématiques correspondantes.
+"""
 
 def calculate(expr: str):
     """Cette fonction trouve  un opérande ainsi que sa position dans la chaine donnée. Elle calcule ensuite le résultat des
