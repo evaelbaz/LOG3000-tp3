@@ -52,4 +52,4 @@ def divide(a,b):
     Raises:
         ZeroDivisionError: Si `b` est égal à zéro, une exception de type `ZeroDivisionError` est levée.
     """
-    return a // b
+    return a / b
