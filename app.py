@@ -11,6 +11,16 @@ OPS = {
 }
 
 def calculate(expr: str):
+    """Cette fonction trouve  un opérande ainsi que sa position dans la chaine donnée. Elle calcule ensuite le résultat des
+    chiffres à gauche et à droite de l'opérande, utilisant celui-ci pour l'opération mathématique.
+    Args:
+        expr (str): Une chaîne de caractères représentant une expression mathématique, par exemple "3+5", "10/2".
+
+    Raises:
+        ValueError: Si l'expression est vide, mal formée ou si les opérandes ne sont pas des nombres.
+
+    Returns:
+        float: Le résultat de l'opération mathématique."""
     if not expr or not isinstance(expr, str):
         raise ValueError("empty expression")
 
@@ -43,6 +53,12 @@ def calculate(expr: str):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    """Fonction exécuté lorsque la page est visitée avec une requête POST ou GET. Dans le cas d'un POST,
+    l'expression mathématique est extraite et son résultat est calculé. Dans les deux cas, la page est ensuite construite et affichée.
+    
+    Returns:
+        str: Le contenu HTML de la page, incluant le résultat du calcul ou un message d'erreur.
+    """
     result = ""
     if request.method == 'POST':
         expression = request.form.get('display', '')
