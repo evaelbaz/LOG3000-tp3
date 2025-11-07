@@ -1,22 +1,9 @@
-# Calculatrice simple
+Nom du projet : Calculatrice simple
 
-- **Numéro d'équipe** : 1
-- **Objectif** : Fournir une calculatrice sous forme d'interface visuel, permettant d'insérer des chiffres et des opérandes et d'ensuite en calculer le résultat, tout comme une calculatrice traditionnelle.
+Numéro d'équipe : 1
 
-## Prérequis d'installation
+Objectif : Fournir une calculatrice sous forme d'interface visuel, permettant d'insérer des chiffres et des opérandes et d'ensuite en calculer le résultat, tout comme une calculatrice traditionnelle.
 
-- **Python** : Doit être installé sur le système
-- **pip** : Doit être installé sur le système
+Prérequis d'installation : Python et pip doivent être installés.
 
-## Instructions d'installation
-
-1. Cloner le repository
-2. Exécuter la commande `pip install flask`
-3. Exécuter la commande `python app.py` (depuis le répertoire `src/`)
-
-## Structure du projet
-
-- `src/` : Module principal contenant l'application Flask et la logique métier
-  - `static/` : Fichiers statiques (CSS) pour le style de l'interface
-  - `templates/` : Templates HTML pour l'interface utilisateur
-
+Instructions d'installation : Cloner le repository, exécuter la commande pip install flask, et exécuter rouler la commande python app.py.
