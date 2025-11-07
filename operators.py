@@ -23,7 +23,7 @@ def subtract(a,b):
         Any: Le résultat de la soustraction de `a` par `b` (c'est-à-dire `b - a`). 
     """
 
-    return b - a
+    return a - b
 
 def multiply(a,b):
     """
