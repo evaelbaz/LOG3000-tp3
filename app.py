@@ -1,5 +1,7 @@
-from flask import Flask, request, render_template
+import sys
+from flask import Flask, request, render_template, current_app, has_request_context
 from operators import add, subtract, multiply, divide
+import logging
 
 app = Flask(__name__)
 
@@ -33,16 +35,27 @@ def calculate(expr: str):
     op_pos = -1
     op_char = None
 
+    #Ignorer le premier caractère si nombre négatif
+    startsWithNegativeSign = s[0] == "-"
+    skip_next = startsWithNegativeSign
     #Trouver la position de l'opérande
     for i, ch in enumerate(s):
+        if skip_next:
+            skip_next = False
+            continue
+        
+        print(i, ch)
         if ch in OPS:
             if op_pos != -1:
                 raise ValueError("only one operator is allowed")
             op_pos = i
             op_char = ch
+            # Si le caractère suivant est un '-', on le saute (pour gérer les nombres négatifs comme "5+-3")
+            if i + 1 < len(s) and s[i + 1] == "-":
+                skip_next = True
 
     if op_pos <= 0 or op_pos >= len(s) - 1:
-        # Aucun opérande trouvé
+        # Aucun opérande trouvée
         raise ValueError("invalid expression format")
 
     left = s[:op_pos]
