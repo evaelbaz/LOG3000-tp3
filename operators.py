@@ -36,7 +36,7 @@ def multiply(a,b):
     Returns:
         Any: Le produit de `a` et `b`. Le type du résultat dépend des types des opérandes.
     """
-    return a ** b
+    return a * b
 
 def divide(a,b):
     """
