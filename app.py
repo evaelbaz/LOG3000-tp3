@@ -1,7 +1,5 @@
-import sys
-from flask import Flask, request, render_template, current_app, has_request_context
+from flask import Flask, request, render_template,
 from operators import add, subtract, multiply, divide
-import logging
 
 app = Flask(__name__)
 
@@ -44,7 +42,6 @@ def calculate(expr: str):
             skip_next = False
             continue
         
-        print(i, ch)
         if ch in OPS:
             if op_pos != -1:
                 raise ValueError("only one operator is allowed")
@@ -55,7 +52,7 @@ def calculate(expr: str):
                 skip_next = True
 
     if op_pos <= 0 or op_pos >= len(s) - 1:
-        # Aucun opérande trouvée
+        # Aucun opérande trouvé
         raise ValueError("invalid expression format")
 
     left = s[:op_pos]
