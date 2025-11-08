@@ -3,7 +3,7 @@
 **Numéro d'équipe :** 1  
 
 ## Objectif
-Fournir une calculatrice avec une interface visuelle permettant d’insérer des chiffres et des opérandes, puis de calculer le résultat,tel une calculatrice traditionnelle.
+Fournir une calculatrice avec une interface visuelle permettant d’insérer des chiffres et des opérandes, puis de calculer le résultat, tel une calculatrice traditionnelle.
 
 ## Prérequis
 - Python installé sur la machine  
