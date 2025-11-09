@@ -23,7 +23,7 @@ def subtract(a,b):
         Any: Le résultat de la soustraction de `a` par `b` (c'est-à-dire `b - a`). 
     """
 
-    return b - a
+    return a - b
 
 def multiply(a,b):
     """
@@ -36,7 +36,7 @@ def multiply(a,b):
     Returns:
         Any: Le produit de `a` et `b`. Le type du résultat dépend des types des opérandes.
     """
-    return a ** b
+    return a * b
 
 def divide(a,b):
     """
@@ -52,4 +52,4 @@ def divide(a,b):
     Raises:
         ZeroDivisionError: Si `b` est égal à zéro, une exception de type `ZeroDivisionError` est levée.
     """
-    return a // b
+    return a / b
